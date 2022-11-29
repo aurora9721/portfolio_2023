@@ -1,0 +1,200 @@
+/* NOTE TO SELF
+The tooltip is aligning relative to the intro div, not the specific word div.
+Try a different way to construct the tooltip, look at the ::before & ::after methods.
+Why is the parenting wrong? Why if we say left:0; does it align with that outer div?
+Check the words and specific id divs too.
+ */
+
+
+html,
+body {
+padding: 0;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+
+    /* ---------------FONTS--------------- */
+
+    @font-face {
+      font-family: 'Apfel Grotezk Brukt';
+      src: url(fonts/ApfelGrotezk-Brukt.otf);
+    }
+
+    @font-face {
+      font-family: 'Apfel Grotezk';
+      font-weight: bold;
+      src: url(fonts/ApfelGrotezk-Fett.otf);
+    }
+
+    @font-face {
+      font-family: 'Apfel Grotezk';
+      src: url(fonts/ApfelGrotezk-Regular.otf);
+    }
+
+    /* ----------------------------------- */
+
+.wrap
+{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+
+}
+
+.intro
+{
+  width: 70vw;
+  height: auto;
+  left: 10vw;
+  top: 20vh;
+  position: absolute;
+  font-family: 'Apfel Grotezk', sans-serif;
+  font-weight: normal;
+  font-size: 2.6vw;
+  color: white;
+
+}
+
+a
+{
+   text-decoration-line: underline;
+   /* text-decoration-thickness: 3px; */
+   color: inherit;
+}
+
+a:link {
+   color: inherit;
+}
+
+a:visited {
+   color: inherit;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: yellow;
+}
+
+/* Tooltip container */
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+
+/* Tooltip text */
+.intro .tooltiptext
+{
+  visibility: hidden;
+  width: auto;
+  /* background-color: magenta; */
+  color: #fff;
+  text-align: left;
+  padding: 0;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+
+.tt_text
+{
+  position: relative;
+  display: flex;
+  font-size: 1.2vw;
+  padding:10px;
+  /* padding-bottom:16px; */
+  z-index: 10;
+  color: black;
+  /* text-transform: uppercase; */
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.intro:hover .tooltiptext
+{
+
+}
+
+#aurora:hover #tt_aurora
+{
+  visibility: visible;
+}
+
+#foundation:hover #tt_foundation
+{
+  visibility: visible;
+  /* left:inherit; */
+
+}
+
+#foundation
+{
+
+}
+
+#tt_foundation
+{
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+}
+
+img
+{
+  display: block;
+  height:auto;
+  width: 20vw;
+  border-radius: 10px;
+  /* opacity: 70%; */
+
+}
+
+.image
+{
+  width: 20vw;
+  background: whitesmoke;
+  z-index: 5;
+  /* padding-bottom: 10vh; */
+  border-radius: 10px;
+}
+
+/* .gradient
+{
+  background: red;
+  display: inherit;
+  z-index: 5;
+} */
+
+/* .image
+{
+  display: absolute;
+  height:auto;
+  width: 20vw;
+  border-radius: 10px;
+  background: linear-gradient(-30deg,transparent 20%, #000f56);
+} */
+
+#img1
+{
+
+}
+
+.words
+{
+  display: inline;
+}
