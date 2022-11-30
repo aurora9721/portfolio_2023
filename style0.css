@@ -9,6 +9,7 @@ Check the words and specific id divs too.
 html,
 body {
 padding: 0;
+box-sizing: border-box;
 }
 
 * {
@@ -195,7 +196,7 @@ img
 
 /* --------------- MOBILE ------------------ */
 
-@media screen and (max-width:700px)
+@media screen and (max-width:450px)
 {
   .wrap
   {
