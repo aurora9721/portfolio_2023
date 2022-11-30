@@ -203,9 +203,9 @@ img
   .wrap
   {
     -webkit-user-select: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
     user-select: none;
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .intro
@@ -238,5 +238,27 @@ img
     font-size: 4vw;
     /* padding:10px; */
   }
+
+  #tt_aurora
+  {
+    top: 0;
+    left: 100%;
+    transform: translate(-30%, 10%);
+  }
+
+  #tt_foundation
+  {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+
+  #tt_discipline
+  {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+
 
 }
