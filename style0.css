@@ -197,9 +197,14 @@ img
 /* --------------- MOBILE ------------------ */
 
 @media screen and (max-width:450px)
+
+
 {
   .wrap
   {
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
     background-color: blue;
   }
 
