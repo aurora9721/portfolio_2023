@@ -36,6 +36,17 @@ box-sizing: border-box;
       src: url(fonts/ApfelGrotezk-Regular.otf);
     }
 
+    @font-face {
+      font-family: 'MAZIUS REVIEW 20.09 Ex italic';
+      src: url(fonts/MAZIUSREVIEW20.09-Extraitalic.otf);
+    }
+
+    @font-face {
+      font-family: 'Ready Active Test Light';
+      src: url(fonts/ReadyActiveTest-Light.otf);
+    }
+
+
     /* ----------------------------------- */
 
 /* ---------------- DESKTOP --------------- */
@@ -148,6 +159,12 @@ a:active {
 {
   visibility: visible;
 }
+
+#aurora
+{
+  /* font-family: 'Ready Active Test Light'; */
+}
+
 
 #tt_aurora
 {
